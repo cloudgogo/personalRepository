@@ -1,0 +1,5 @@
+// These settings override both User and Default settings for the Plain text syntax
+{
+	"font_face": "微软雅黑",
+    "font_size": 10,
+}

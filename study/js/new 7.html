@@ -1,0 +1,117 @@
+
+SELECT T.*
+  FROM (SELECT
+          
+         JH.HEADER_ID,
+         '' je_header_des,
+         '' je_header_num,
+         jh.currency_code,
+         JL.LINE_NUM, --行号
+         JL.DESCRIPTION L_DESC, --行摘要
+         JL.LEDGER_ID, --账套
+         JL.FIN_ELEMENT, --财务要素
+         JL.SEGMENT1, --公司
+        
+         JL.SEGMENT2, --部门
+         
+         JL.SEGMENT3, --会计科目
+JL.SEGMENT4,JL.SEGMENT5,JL.SEGMENT6,
+JL.SEGMENT7,JL.SEGMENT8,JL.SEGMENT9,
+JL.SEGMENT10,JL.SEGMENT11,
+
+
+
+         
+         jh.PERIOD_NAME, --期间 
+         JH.ACCOUNT_DATE, --记账日期
+         
+         JL.ACCOUNTED_DR, --借方
+         JL.ACCOUNTED_CR --贷方
+        
+          FROM HRS_CORE_JE_HEADER  JH,
+               HRS_CORE_JE_LINE    JL
+         WHERE JH.HEADER_ID = JL.HEADER_ID
+         
+           AND JH.PERIOD_NAME in (SELECT P.PERIOD_NAME
+          FROM HRS_CORE_FIN_PERIOD P,
+               HRS_CORE_FIN_PERIOD P2
+         WHERE P.PERIOD_YEAR = SUBSTR('${p2PeriodName}', 0, 4)
+           AND P.PERIOD_NUM <= P2.PERIOD_NUM
+           AND P2.PERIOD_NAME = '${p2PeriodName}'
+          
+        )
+           AND JL.LEDGER_ID = ${p2LedgerId}
+     
+           AND JL.FIN_ELEMENT IN ('${p2FinElement}')
+           and jl.segment3='${p2Segment3}'
+
+ --改 12.30
+           ${IF(LEN(p2Project) == 0,
+                    "",
+                    " and  jl.SEGMENT6  in( '" + p2Project + "')") }
+           
+        ) T,
+       
+       (SELECT H.DIM_VALUE COM1,
+               H.CHILD_DIM_VALUE_LOW,
+               H.CHILD_DIM_VALUE_HIGH
+          FROM HRS_CORE_DIMENSION D, HRS_CORE_DIM_VALUE_HIERARCHY H
+         WHERE 1 = 1
+           AND D.DIM_SEGMENT = 'SEGMENT1'
+           AND H.DIMENSION_ID = D.DIMENSION_ID
+         ${IF(LEN(p2CompanyCode) == 0,
+                    "",
+                    " AND H.DIM_VALUE  in( '" + p2CompanyCode + "')") }
+        UNION
+        SELECT V.DIM_VALUE COM1,
+               V.DIM_VALUE CHILD_DIM_VALUE_LOW,
+               V.DIM_VALUE CHILD_DIM_VALUE_HIGH
+          FROM HRS_CORE_DIMENSION D, HRS_CORE_DIMENSION_VALUE V
+         WHERE 1 = 1
+           AND D.DIM_SEGMENT = 'SEGMENT1'
+           AND D.DIMENSION_ID = V.DIMENSION_ID
+         ${IF(LEN(p2CompanyCode) == 0,
+                    "",
+                    " AND V.DIM_VALUE  in( '" + p2CompanyCode + "')") }
+           AND V.SUMMARY_FLAG = 'N') T_LIE,
+       
+       (SELECT H.DIM_VALUE DEPT1,
+               H.CHILD_DIM_VALUE_LOW,
+               H.CHILD_DIM_VALUE_HIGH
+          FROM HRS_CORE_DIMENSION D, HRS_CORE_DIM_VALUE_HIERARCHY H
+         WHERE 1 = 1
+           AND D.DIM_SEGMENT = 'SEGMENT2'
+           AND H.DIMENSION_ID = D.DIMENSION_ID
+         ${IF(LEN(p2DeptCode) == 0,
+                    "and 1<>1",
+                    " AND H.DIM_VALUE  in( '" + p2DeptCode + "')") }
+        UNION
+        SELECT V.DIM_VALUE DEPT1,
+               V.DIM_VALUE CHILD_DIM_VALUE_LOW,
+               V.DIM_VALUE CHILD_DIM_VALUE_HIGH
+          FROM HRS_CORE_DIMENSION D, HRS_CORE_DIMENSION_VALUE V
+         WHERE 1 = 1
+           AND D.DIM_SEGMENT = 'SEGMENT2'
+           AND D.DIMENSION_ID = V.DIMENSION_ID
+         ${IF(LEN(p2DeptCode) == 0,
+                    "",
+                    " AND V.DIM_VALUE  in( '" + p2DeptCode + "')") }
+           AND V.SUMMARY_FLAG = 'N') T_SEG2
+
+ WHERE 1 = 1
+   AND T.SEGMENT1 BETWEEN T_LIE.CHILD_DIM_VALUE_LOW AND
+       T_LIE.CHILD_DIM_VALUE_HIGH
+      
+   AND T.SEGMENT2 BETWEEN T_SEG2.CHILD_DIM_VALUE_LOW AND
+       T_SEG2.CHILD_DIM_VALUE_HIGH
+       
+   and t.PERIOD_NAME=decode('${p2DataType}','A11',t.PERIOD_NAME,
+   
+   decode('${p2DataType}','A01',t.PERIOD_NAME,'${p2PeriodName}')
+   
+   )
+
+order by  t.PERIOD_NAME,t.LINE_NUM
+
+   
+   --and t.PERIOD_NAME ='${p2PeriodName}'

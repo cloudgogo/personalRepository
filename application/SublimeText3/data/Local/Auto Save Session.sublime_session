@@ -1,0 +1,847 @@
+{
+	"folder_history":
+	[
+		"/G/study",
+		"/G/application/Sublime Text 3/Data/Packages/Anaconda/anaconda_server",
+		"/C/Users/temp/Desktop/study",
+		"/G/System Volume Information",
+		"/C/Users/temp/Desktop/py",
+		"/C/Users/temp/Desktop/history",
+		"/C/Users/temp/Desktop/2017-06-12 1732  jarbak",
+		"/C/Users/temp/Desktop/首页与报错页面"
+	],
+	"last_version": 3126,
+	"last_window_id": 23,
+	"log_indexing": false,
+	"settings":
+	{
+		"new_window_height": 713.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"s",
+						"strip"
+					],
+					[
+						"class",
+						"classmate\tstatement"
+					],
+					[
+						"_",
+						"__debug__\tinstance"
+					],
+					[
+						"clas",
+						"classmate\tstatement"
+					],
+					[
+						"c",
+						"classmate"
+					],
+					[
+						"ba",
+						"background-color"
+					]
+				]
+			},
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 160.0,
+				"last_filter": "men",
+				"selected_items":
+				[
+					[
+						"men",
+						"View: Toggle Menu"
+					],
+					[
+						"parc",
+						"Package Control: Install Package"
+					],
+					[
+						"me",
+						"View: Toggle Menu"
+					],
+					[
+						"par",
+						"Package Control: Install Package"
+					],
+					[
+						"menu",
+						"View: Toggle Menu"
+					],
+					[
+						"python ",
+						"SublimeREPL: Python - IPython"
+					],
+					[
+						"pyt",
+						"SublimeREPL: Python - Sublime Text Console"
+					],
+					[
+						"package",
+						"Package Control: Install Package"
+					],
+					[
+						"sspy",
+						"Set Syntax: Python"
+					],
+					[
+						"sshtml",
+						"Set Syntax: HTML"
+					],
+					[
+						"vie",
+						"View: Toggle Menu"
+					],
+					[
+						"PAR",
+						"Package Control: Remove Package"
+					],
+					[
+						"VE",
+						"View: Toggle Menu"
+					],
+					[
+						"SSHTML",
+						"Set Syntax: HTML"
+					],
+					[
+						"Package Control: ",
+						"Package Control: Install Package"
+					],
+					[
+						"ssht",
+						"Set Syntax: HTML (Tcl)"
+					],
+					[
+						"pac",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 386.0
+			},
+			"console":
+			{
+				"height": 96.0,
+				"history":
+				[
+					"r = ???",
+					"'%.2f' % 3.1415926",
+					"'%2d-%02d' % (3, 1)",
+					"'Hello, %s' % 'world'",
+					"exit()",
+					"print('hello,world')",
+					"C:\\Users\\temp\\Desktop\\py\\firstClass\\Class1.py",
+					"Class1.py",
+					"Class1"
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/G/study/python/ClassAndNote/CNote1.py",
+				"/G/study/python/ClassAndNote/CNote2.py",
+				"/G/study/python/ClassAndNote",
+				"/G/application/Sublime Text 3/Data/Packages/Sublimerge 3/Default (Windows).sublime-keymap",
+				"/G/application/Sublime Text 3/Data/Packages/User/Default (Windows).sublime-keymap",
+				"/C/Users/temp/Desktop/study/python/note/Note3.md",
+				"/C/Users/temp/Desktop/study/python/Class/Class2.py",
+				"/C/Users/temp/Desktop/study/python/Class/service.py",
+				"/G/application/Sublime Text 3/Data/Packages/Anaconda/anaconda_server/jsonserver.py",
+				"/G/application/Sublime Text 3/Data/Packages/Anaconda/Anaconda.sublime-settings",
+				"/G/application/Sublime Text 3/Data/Packages/User/Anaconda.sublime-settings",
+				"/G/application/Sublime Text 3/usefulMyKey.md",
+				"/G/application/Sublime Text 3/Data/Packages/Anaconda/README.md",
+				"/C/Users/temp/Desktop/study/python/prictice/prictice1.py",
+				"/G/application/Sublime Text 3/Data/Packages/Anaconda/anaconda_server/docker/start",
+				"/G/application/Sublime Text 3/Data/Packages/Anaconda/anaconda_server/__init__.py",
+				"/G/application/Sublime Text 3/Data/Packages/Anaconda/Main.sublime-menu",
+				"/G/application/Sublime Text 3/Data/Packages/Anaconda/Default (Windows).sublime-keymap",
+				"/G/application/Sublime Text 3/Data/Packages/User/Python.sublime-settings",
+				"/G/application/help/sublimeMyKey.txt",
+				"/G/application/Sublime Text 3/Data/Packages/Python PEP8 Autoformat/Default (Windows).sublime-keymap",
+				"/G/application/Sublime Text 3/Data/Packages/Python PEP8 Autoformat/pep8_autoformat.sublime-settings",
+				"/C/Users/temp/Desktop/study/python/Class/Class1.py",
+				"/C/Users/temp/Desktop/study/python/Class/Class3.py",
+				"/C/Users/temp/Desktop/study/python/note/Note2.md",
+				"/G/study/python/note/Note2.md",
+				"/C/Users/temp/Desktop/XIRR_FUN.java",
+				"/C/Users/temp/Desktop/XIRR_FUN.class",
+				"/G/study/python/note/mdRegular.md",
+				"/G/study/python/note/FClass1Note.md",
+				"/G/study/python/note/FClass2Note.md",
+				"/G/study/python/Class/Class1.py",
+				"/G/study/python/Class/service.py",
+				"/D/finefile/日期问题说明.md",
+				"/G/application/Sublime Text 3/sublimeMyKey.txt",
+				"/G/application/description/mdRegular.md",
+				"/C/Users/temp/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+				"/C/Users/temp/Desktop/py/firstClass/Class1.py",
+				"/C/Users/temp/Desktop/py/note/FClass1Note.md",
+				"/C/Users/temp/Desktop/py/note/mdRegular.md",
+				"/C/Users/temp/AppData/Roaming/Sublime Text 3/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
+				"/C/Users/temp/Desktop/py/firstClass/service.py",
+				"/C/Users/temp/Desktop/py/firstClass/service",
+				"/C/Users/temp/Desktop/py/firstClass/learning.py",
+				"/C/Users/temp/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+				"/C/Users/temp/AppData/Roaming/Sublime Text 3/Packages/User/SublimeREPL.sublime-settings",
+				"/G/System Volume Information/WPSettings.dat",
+				"/G/System Volume Information/IndexerVolumeGuid",
+				"/C/Users/temp/Desktop/首页与报错页面/errror.html",
+				"/C/Users/temp/Desktop/首页与报错页面/aaa.html",
+				"/C/Users/temp/Desktop/AAA.adp",
+				"/C/Users/temp/Desktop/error.txt",
+				"/C/Users/temp/AppData/Roaming/Sublime Text 3/Packages/User/ConvertToUTF8.sublime-settings",
+				"/C/Users/temp/AppData/Roaming/Sublime Text 3/Packages/Emmet/Default (Windows).sublime-keymap"
+			],
+			"find":
+			{
+				"height": 36.0
+			},
+			"find_in_files":
+			{
+				"height": 92.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"print",
+					"))))\n",
+					" port",
+					"port",
+					"python的字符串",
+					"Shift",
+					"    \n",
+					"()",
+					";"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": true,
+				"replace_history":
+				[
+					";\\n",
+					"!"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 22.0
+			},
+			"input":
+			{
+				"height": 33.0
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"replace":
+			{
+				"height": 64.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 179.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 984.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"s",
+						"strip"
+					],
+					[
+						"class",
+						"classmate\tstatement"
+					],
+					[
+						"_",
+						"__debug__\tinstance"
+					],
+					[
+						"clas",
+						"classmate\tstatement"
+					],
+					[
+						"c",
+						"classmate"
+					],
+					[
+						"ba",
+						"background-color"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/G/study/python/Class/Class1.py",
+					"settings":
+					{
+						"buffer_size": 217,
+						"encoding": "UTF-8",
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/G/study/python/ClassAndNote/CNote1.py",
+					"settings":
+					{
+						"buffer_size": 1821,
+						"encoding": "UTF-8",
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"contents": "请输入变量值\naaa\n变量为:aaa\nThe quick brown fox jumps over the lazy dog\n300\n100+200= 300\n\n\n***Repl Closed***\n",
+					"settings":
+					{
+						"buffer_size": 100,
+						"line_ending": "Windows",
+						"name": "*REPL* [python]",
+						"read_only": true,
+						"scratch": true
+					}
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 361.0,
+				"last_filter": "PARC",
+				"selected_items":
+				[
+					[
+						"PARC",
+						"Package Control: List Packages"
+					],
+					[
+						"par",
+						"Package Control: Disable Package"
+					],
+					[
+						"men",
+						"View: Toggle Menu"
+					],
+					[
+						"parc",
+						"Package Control: Install Package"
+					],
+					[
+						"me",
+						"View: Toggle Menu"
+					],
+					[
+						"menu",
+						"View: Toggle Menu"
+					],
+					[
+						"python ",
+						"SublimeREPL: Python - IPython"
+					],
+					[
+						"pyt",
+						"SublimeREPL: Python - Sublime Text Console"
+					],
+					[
+						"package",
+						"Package Control: Install Package"
+					],
+					[
+						"sspy",
+						"Set Syntax: Python"
+					],
+					[
+						"sshtml",
+						"Set Syntax: HTML"
+					],
+					[
+						"vie",
+						"View: Toggle Menu"
+					],
+					[
+						"PAR",
+						"Package Control: Remove Package"
+					],
+					[
+						"VE",
+						"View: Toggle Menu"
+					],
+					[
+						"SSHTML",
+						"Set Syntax: HTML"
+					],
+					[
+						"Package Control: ",
+						"Package Control: Install Package"
+					],
+					[
+						"ssht",
+						"Set Syntax: HTML (Tcl)"
+					],
+					[
+						"pac",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 386.0
+			},
+			"console":
+			{
+				"height": 96.0,
+				"history":
+				[
+					"r = ???",
+					"'%.2f' % 3.1415926",
+					"'%2d-%02d' % (3, 1)",
+					"'Hello, %s' % 'world'",
+					"exit()",
+					"print('hello,world')",
+					"C:\\Users\\temp\\Desktop\\py\\firstClass\\Class1.py",
+					"Class1.py",
+					"Class1"
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"expanded_folders":
+			[
+				"/G/study"
+			],
+			"file_history":
+			[
+				"/G/study/python/ClassAndNote/CNote1.py",
+				"/G/study/python/ClassAndNote/CNote2.py",
+				"/G/study/python/ClassAndNote",
+				"/G/application/Sublime Text 3/Data/Packages/Sublimerge 3/Default (Windows).sublime-keymap",
+				"/G/application/Sublime Text 3/Data/Packages/User/Default (Windows).sublime-keymap",
+				"/C/Users/temp/Desktop/study/python/note/Note3.md",
+				"/C/Users/temp/Desktop/study/python/Class/Class2.py",
+				"/C/Users/temp/Desktop/study/python/Class/service.py",
+				"/G/application/Sublime Text 3/Data/Packages/Anaconda/anaconda_server/jsonserver.py",
+				"/G/application/Sublime Text 3/Data/Packages/Anaconda/Anaconda.sublime-settings",
+				"/G/application/Sublime Text 3/Data/Packages/User/Anaconda.sublime-settings",
+				"/G/application/Sublime Text 3/usefulMyKey.md",
+				"/G/application/Sublime Text 3/Data/Packages/Anaconda/README.md",
+				"/C/Users/temp/Desktop/study/python/prictice/prictice1.py",
+				"/G/application/Sublime Text 3/Data/Packages/Anaconda/anaconda_server/docker/start",
+				"/G/application/Sublime Text 3/Data/Packages/Anaconda/anaconda_server/__init__.py",
+				"/G/application/Sublime Text 3/Data/Packages/Anaconda/Main.sublime-menu",
+				"/G/application/Sublime Text 3/Data/Packages/Anaconda/Default (Windows).sublime-keymap",
+				"/G/application/Sublime Text 3/Data/Packages/User/Python.sublime-settings",
+				"/G/application/help/sublimeMyKey.txt",
+				"/G/application/Sublime Text 3/Data/Packages/Python PEP8 Autoformat/Default (Windows).sublime-keymap",
+				"/G/application/Sublime Text 3/Data/Packages/Python PEP8 Autoformat/pep8_autoformat.sublime-settings",
+				"/C/Users/temp/Desktop/study/python/Class/Class1.py",
+				"/C/Users/temp/Desktop/study/python/Class/Class3.py",
+				"/C/Users/temp/Desktop/study/python/note/Note2.md",
+				"/G/study/python/note/Note2.md",
+				"/C/Users/temp/Desktop/XIRR_FUN.java",
+				"/C/Users/temp/Desktop/XIRR_FUN.class",
+				"/G/study/python/note/mdRegular.md",
+				"/G/study/python/note/FClass1Note.md",
+				"/G/study/python/note/FClass2Note.md",
+				"/G/study/python/Class/Class1.py",
+				"/G/study/python/Class/service.py",
+				"/D/finefile/日期问题说明.md",
+				"/G/application/Sublime Text 3/sublimeMyKey.txt",
+				"/G/application/description/mdRegular.md",
+				"/C/Users/temp/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+				"/C/Users/temp/Desktop/py/firstClass/Class1.py",
+				"/C/Users/temp/Desktop/py/note/FClass1Note.md",
+				"/C/Users/temp/Desktop/py/note/mdRegular.md",
+				"/C/Users/temp/AppData/Roaming/Sublime Text 3/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
+				"/C/Users/temp/Desktop/py/firstClass/service.py",
+				"/C/Users/temp/Desktop/py/firstClass/service",
+				"/C/Users/temp/Desktop/py/firstClass/learning.py",
+				"/C/Users/temp/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+				"/C/Users/temp/AppData/Roaming/Sublime Text 3/Packages/User/SublimeREPL.sublime-settings",
+				"/G/System Volume Information/WPSettings.dat",
+				"/G/System Volume Information/IndexerVolumeGuid",
+				"/C/Users/temp/Desktop/首页与报错页面/errror.html",
+				"/C/Users/temp/Desktop/首页与报错页面/aaa.html",
+				"/C/Users/temp/Desktop/AAA.adp",
+				"/C/Users/temp/Desktop/error.txt",
+				"/C/Users/temp/AppData/Roaming/Sublime Text 3/Packages/User/ConvertToUTF8.sublime-settings",
+				"/C/Users/temp/AppData/Roaming/Sublime Text 3/Packages/Emmet/Default (Windows).sublime-keymap"
+			],
+			"find":
+			{
+				"height": 36.0
+			},
+			"find_in_files":
+			{
+				"height": 92.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"print",
+					"))))\n",
+					" port",
+					"port",
+					"python的字符串",
+					"Shift",
+					"    \n",
+					"()",
+					";"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": true,
+				"replace_history":
+				[
+					";\\n",
+					"!"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"folders":
+			[
+				{
+					"path": "G:\\study"
+				}
+			],
+			"groups":
+			[
+				{
+					"selected": 1,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/G/study/python/Class/Class1.py",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 217,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										191,
+										191
+									]
+								],
+								"settings":
+								{
+									"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+									"is_init_dirty_state": false,
+									"origin_encoding": "UTF-8",
+									"syntax": "Packages/Python/Python.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/G/study/python/ClassAndNote/CNote1.py",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 1821,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+									"syntax": "Packages/Python/Python.sublime-syntax",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 336.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						}
+					]
+				},
+				{
+					"selected": 0,
+					"sheets":
+					[
+						{
+							"buffer": 2,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 100,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										100,
+										100
+									]
+								],
+								"settings":
+								{
+									"auto_complete": true,
+									"auto_complete_triggers":
+									[
+										{
+											"characters": ".",
+											"selector": "source.python - string - comment - constant.numeric"
+										},
+										{
+											"characters": ".",
+											"selector": "source.python - string - constant.numeric"
+										}
+									],
+									"auto_indent": false,
+									"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+									"default_dir": "G:\\study",
+									"detect_indentation": false,
+									"gutter": false,
+									"history_arrows": true,
+									"indent_subsequent_lines": false,
+									"is_init_dirty_state": false,
+									"line_numbers": false,
+									"origin_encoding": "UTF-8",
+									"repl": true,
+									"repl_external_id": "python",
+									"repl_id": "c377c0df2c2648c0958fb514b743de9d",
+									"repl_restart_args":
+									{
+										"cmd":
+										[
+											"python",
+											"-u",
+											"$file_basename"
+										],
+										"cwd": "$file_path",
+										"encoding": "utf8",
+										"extend_env":
+										{
+											"PYTHONIOENCODING": "utf-8"
+										},
+										"external_id": "python",
+										"syntax": "Packages/Python/Python.tmLanguage",
+										"type": "subprocess"
+									},
+									"repl_sublime2": false,
+									"smart_indent": false,
+									"spell_check": false,
+									"syntax": "Packages/Python/Python.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 2,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 22.0
+			},
+			"input":
+			{
+				"height": 33.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					],
+					[
+						0,
+						1,
+						1,
+						2
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					0.732371794872,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0,2,2,-32000,-32000,-1,-1,782,155,10,1155",
+			"project": "",
+			"replace":
+			{
+				"height": 64.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 179.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 1,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}

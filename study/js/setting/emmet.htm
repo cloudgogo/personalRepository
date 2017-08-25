@@ -1,0 +1,370 @@
+Emmet (前身为 Zen Coding) 是一个能大幅度提高前端开发效率的一个工具:
+
+基本上，大多数的文本编辑器都会允许你存储和重用一些代码块，我们称之为“片段”。虽然片段能很好地推动你得生产力，但大多数的实现都有这样一个缺点：你必须先定义你得代码片段，并且不能再运行时进行拓展。
+Emmet把片段这个概念提高到了一个新的层次：你可以设置CSS形式的能够动态被解析的表达式，然后根据你所输入的缩写来得到相应的内容。Emmet是很成熟的并且非常适用于编写HTML/XML 和 CSS 代码的前端开发人员，但也可以用于编程语言。
+使用示例：
+在编辑器中输入缩写代码：ul>li*5 ，然后按下拓展键（默认为tab），即可得到代码片段：
+<ul><li>li><li>li><li>li><li>li><li>li>ul>
+下载和安装
+  1. Emmet为大部分流行的编辑器都提供了安装插件，下面是它们的下载链接：
+      ○ Sublime Text
+      ○ Eclipse/Aptana
+      ○ TextMate
+      ○ Coda
+      ○ Espresso
+      ○ Chocolat
+      ○ Komodo Edit
+      ○ Notepad++
+      ○ PSPad
+      ○ textarea
+      ○ CodeMirror
+      ○ Brackets
+      ○ NetBeans
+      ○ Adobe Dreamweaver
+  2. 在线编辑器的支持：
+      ○ JSFiddle
+      ○ JS Bin
+      ○ CodePen
+      ○ ICEcoder
+      ○ Divshot
+      ○ Codio
+  3. 第三方插件的支持
+下面这些编辑器的插件都是由第三方开发者所提供的，所以可能并不支持所有Emmet的功能和特性。
+      ○ SynWrite
+      ○ WebStorm
+      ○ PhpStorm
+      ○ Vim
+      ○ HTML-Kit
+      ○ HippoEDIT
+      ○ CodeLobster PHP Edition
+      ○ TinyMCE
+因为我也是Sublime Text的使用者，所以下面为大家介绍一下sublime text中Emmet的安装方法：
+步骤一：首先你需要为sublime text安装Package Control组件：
+  1. 按Ctrl+`调出sublime text的console
+  2. 粘贴以下代码到底部命令行并回车： import urllib2,os;pf='Package Control.sublime-package';ipp=sublime.installedpackagespath();os.makedirs(ipp) if not os.path.exists(ipp) else None;open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())
+  3. 重启Sublime Text
+  4. 在Perferences->package settings中看到package control，则表示安装成功
+步骤二：使用Package Control安装Emmet插件：
+  1. 按Ctrl+Shift+P命令板
+  2. 输入install然后选择install Package，然后输入emmet找到 Emmet Css Snippets，点击就可以自动完成安装。
+使用方法
+emmet的使用方法也非常简单，以sublime text为例，直接在编辑器中输入HTML或CSS的代码的缩写，然后按tab键就可以拓展为完整的代码片段。（如果与已有的快捷键有冲突的话，可以自行在编辑器中将拓展键设为其他快捷键）
+语法:
+后代：>
+缩写：nav>ul>li
+<nav><ul><li>li>ul>nav>
+兄弟：+
+缩写：div+p+bq
+<div>div><p>p><blockquote>blockquote>
+上级：^
+缩写：div+div>p>span+em^bq
+<div>div><div><p><span>span><em>em>p><blockquote>blockquote>div>
+缩写：div+div>p>span+em^^bq
+<div>div><div><p><span>span><em>em>p>div><blockquote>blockquote>
+分组：()
+缩写：div>(header>ul>li*2>a)+footer>p
+<div><header><ul><li><ahref="">a>li><li><ahref="">a>li>ul>header><footer><p>p>footer>div>
+缩写：(div>dl>(dt+dd)*3)+footer>p
+<div><dl><dt>dt><dd>dd><dt>dt><dd>dd><dt>dt><dd>dd>dl>div><footer><p>p>footer>
+乘法：*
+缩写：ul>li*5
+<ul><li>li><li>li><li>li><li>li><li>li>ul>
+自增符号：$
+缩写：ul>li.item$*5
+<ul><liclass="item1">li><liclass="item2">li><liclass="item3">li><liclass="item4">li><liclass="item5">li>ul>
+缩写：h$[title=item$]{Header $}*3
+<h1title="item1">Header 1h1><h2title="item2">Header 2h2><h3title="item3">Header 3h3>
+缩写：ul>li.item$$$*5
+<ul><liclass="item001">li><liclass="item002">li><liclass="item003">li><liclass="item004">li><liclass="item005">li>ul>
+缩写：ul>li.item$@-*5
+<ul><liclass="item5">li><liclass="item4">li><liclass="item3">li><liclass="item2">li><liclass="item1">li>ul>
+缩写：ul>li.item$@3*5
+<ul><liclass="item3">li><liclass="item4">li><liclass="item5">li><liclass="item6">li><liclass="item7">li>ul>
+ID和类属性
+缩写：#header
+<divid="header">div>
+缩写：.title
+<divclass="title">div>
+缩写：form#search.wide
+<formid="search"class="wide">form>
+缩写：p.class1.class2.class3
+<pclass="class1 class2 class3">p>
+自定义属性
+缩写：p[title="Hello world"]
+<ptitle="Hello world">p>
+缩写：td[rowspan=2 colspan=3 title]
+<tdrowspan="2"colspan="3"title="">td>
+缩写：[a='value1' b="value2"]
+<diva="value1"b="value2">div>
+文本：{}
+缩写：a{Click me}
+<ahref="">Click mea>
+缩写：p>{Click }+a{here}+{ to continue}
+<p>Click <ahref="">herea> to continuep>
+隐式标签
+缩写：.class
+<divclass="class">div>
+缩写：em>.class
+<em><spanclass="class">span>em>
+缩写：ul>.class
+<ul><liclass="class">li>ul>
+缩写：table>.row>.col
+<table><trclass="row"><tdclass="col">td>tr>table>
+HTML
+所有未知的缩写都会转换成标签，例如，foo →
+缩写：!
+<htmllang="en"><head><metacharset="UTF-8"><title>Documenttitle>head><body>body>html>
+缩写：a
+<ahref="">a>
+缩写：a:link
+<ahref="http://">a>
+缩写：a:mail
+<ahref="mailto:">a>
+缩写：abbr
+<abbrtitle="">abbr>
+缩写：acronym
+<acronymtitle="">acronym>
+缩写：base
+<basehref="" />
+缩写：basefont
+<basefont />
+缩写：br
+<br />
+缩写：frame
+<frame />
+缩写：hr
+<hr />
+缩写：bdo
+<bdodir="">bdo>
+缩写：bdo:r
+<bdodir="rtl">bdo>
+缩写：bdo:l
+<bdodir="ltr">bdo>
+缩写：col
+<col />
+缩写：link
+<linkrel="stylesheet"href="" />
+缩写：link:css
+<linkrel="stylesheet"href="style.css" />
+缩写：link:print
+<linkrel="stylesheet"href="print.css"media="print" />
+缩写：link:favicon
+<linkrel="shortcut icon"type="image/x-icon"href="favicon.ico" />
+缩写：link:touch
+<linkrel="apple-touch-icon"href="favicon.png" />
+缩写：link:rss
+<linkrel="alternate"type="application/rss+xml"title="RSS"href="rss.xml" />
+缩写：link:atom
+<linkrel="alternate"type="application/atom+xml"title="Atom"href="atom.xml" />
+缩写：meta
+<meta />
+缩写：meta:utf
+<metahttp-equiv="Content-Type"content="text/html;charset=UTF-8" />
+缩写：meta:win
+<metahttp-equiv="Content-Type"content="text/html;charset=windows-1251" />
+缩写：meta:vp
+<metaname="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+缩写：meta:compat
+<metahttp-equiv="X-UA-Compatible"content="IE=7" />
+缩写：style
+<style>style>
+缩写：script
+<script>script>
+缩写：script:src
+<scriptsrc="">script>
+缩写：img
+<imgsrc=""alt="" />
+缩写：iframe
+<iframesrc=""frameborder="0">iframe>
+缩写：embed
+<embedsrc=""type="" />
+缩写：object
+<objectdata=""type="">object>
+缩写：param
+<paramname=""value="" />
+缩写：map
+<mapname="">map>
+缩写：area
+<areashape=""coords=""href=""alt="" />
+缩写：area:d
+<areashape="default"href=""alt="" />
+缩写：area:c
+<areashape="circle"coords=""href=""alt="" />
+缩写：area:r
+<areashape="rect"coords=""href=""alt="" />
+缩写：area:p
+<areashape="poly"coords=""href=""alt="" />
+缩写：form
+<formaction="">form>
+缩写：form:get
+<formaction=""method="get">form>
+缩写：form:post
+<formaction=""method="post">form>
+缩写：label
+<labelfor="">label>
+缩写：input
+<inputtype="text" />
+缩写：inp
+<inputtype="text"name=""id="" />
+缩写：input:hidden
+别名：input[type=hidden name]
+<inputtype="hidden"name="" />
+缩写：input:h
+别名：input:hidden
+<inputtype="hidden"name="" />
+缩写：input:text, input:t
+别名：inp
+<inputtype="text"name=""id="" />
+缩写：input:search
+别名：inp[type=search]
+<inputtype="search"name=""id="" />
+缩写：input:email
+别名：inp[type=email]
+<inputtype="email"name=""id="" />
+缩写：input:url
+别名：inp[type=url]
+<inputtype="url"name=""id="" />
+缩写：input:password
+别名：inp[type=password]
+<inputtype="password"name=""id="" />
+缩写：input:p
+别名：input:password
+<inputtype="password"name=""id="" />
+缩写：input:datetime
+别名：inp[type=datetime]
+<inputtype="datetime"name=""id="" />
+缩写：input:date
+别名：inp[type=date]
+<inputtype="date"name=""id="" />
+缩写：input:datetime-local
+别名：inp[type=datetime-local]
+<inputtype="datetime-local"name=""id="" />
+缩写：input:month
+别名：inp[type=month]
+<inputtype="month"name=""id="" />
+缩写：input:week
+别名：inp[type=week]
+<inputtype="week"name=""id="" />
+缩写：input:time
+别名：inp[type=time]
+<inputtype="time"name=""id="" />
+缩写：input:number
+别名：inp[type=number]
+<inputtype="number"name=""id="" />
+缩写：input:color
+别名：inp[type=color]
+<inputtype="color"name=""id="" />
+缩写：input:checkbox
+别名：inp[type=checkbox]
+<inputtype="checkbox"name=""id="" />
+缩写：input:c
+别名：input:checkbox
+<inputtype="checkbox"name=""id="" />
+缩写：input:radio
+别名：inp[type=radio]
+<inputtype="radio"name=""id="" />
+缩写：input:r
+别名：input:radio
+<inputtype="radio"name=""id="" />
+缩写：input:range
+别名：inp[type=range]
+<inputtype="range"name=""id="" />
+缩写：input:file
+别名：inp[type=file]
+<inputtype="file"name=""id="" />
+缩写：input:f
+别名：input:file
+<inputtype="file"name=""id="" />
+缩写：input:submit
+<inputtype="submit"value="" />
+缩写：input:s
+别名：input:submit
+<inputtype="submit"value="" />
+缩写：input:image
+<inputtype="image"src=""alt="" />
+缩写：input:i
+别名：input:image
+<inputtype="image"src=""alt="" />
+缩写：input:button
+<inputtype="button"value="" />
+缩写：input:b
+别名：input:button
+<inputtype="button"value="" />
+缩写：isindex
+<isindex />
+缩写：input:reset
+别名：input:button[type=reset]
+<inputtype="reset"value="" />
+缩写：select
+<selectname=""id="">select>
+缩写：option
+<optionvalue="">option>
+缩写：textarea
+<textareaname=""id=""cols="30"rows="10">textarea>
+缩写：menu:context
+别名：menu[type=context]>
+<menutype="context">menu>
+缩写：menu:c
+别名：menu:context
+<menutype="context">menu>
+缩写：menu:toolbar
+别名：menu[type=toolbar]>
+<menutype="toolbar">menu>
+缩写：menu:t
+别名：menu:toolbar
+<menutype="toolbar">menu>
+缩写：video
+<videosrc="">video>
+缩写：audio
+<audiosrc="">audio>
+缩写：html:xml
+<htmlxmlns="http://www.w3.org/1999/xhtml">html>
+缩写：keygen
+<keygen />
+缩写：command
+<command />
+缩写：bq
+别名：blockquote
+<blockquote>blockquote>
+缩写：acr
+别名：acronym
+<acronymtitle="">acronym>
+缩写：fig
+别名：figure
+<figure>figure>
+缩写：figc
+别名：figcaption
+<figcaption>figcaption>
+缩写：ifr
+别名：iframe
+<iframesrc=""frameborder="0">iframe>
+缩写：emb
+别名：embed
+<embedsrc=""type="" />
+缩写：obj
+别名：object
+<objectdata=""type="">object>
+缩写：src
+别名：source
+<source>source>
+缩写：cap
+别名：caption
+<caption>caption>
+缩写：colg
+别名：colgroup
+<colgroup>colgroup>
+缩写：fst, fset
+别名：fieldset
+<fieldset>fieldset>
+缩写：btn
+别名：button
+<button>button>
+缩写：btn:b
+别名：button[type=button]
+<buttontype="button">button>
+缩写：btn:r
+别名：button[type=reset]
+<buttontype="reset">button>
+缩写：btn:s
+别名：button[type=submit]
+<buttontype="submit">button>

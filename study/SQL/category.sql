@@ -1,0 +1,15 @@
+INSERT INTO `category` VALUES (1, 0, '一级菜单', 1, '一级菜单', 0, '一级菜单', '');
+INSERT INTO `category` VALUES (2, 0, '二级菜单', 1, '二级菜单', 0, '二级菜单', '');
+INSERT INTO `category` VALUES (3, 2, '二级菜单', 1, '二级菜单', 0, '二级菜单', '');
+INSERT INTO `category` VALUES (4, 0, '三级菜单', 1, '三级菜单', 0, '三级菜单', '');
+INSERT INTO `category` VALUES (5, 4, '三级菜单', 1, '三级菜单', 0, '三级菜单', '');
+INSERT INTO `category` VALUES (6, 5, '三级菜单', 1, '三级菜单', 0, '三级菜单', '');
+INSERT INTO `category` VALUES (7, 0, '四级菜单', 1, '四级菜单', 0, '四级菜单', '');
+INSERT INTO `category` VALUES (8, 7, '四级菜单', 1, '四级菜单', 0, '四级菜单', '');
+INSERT INTO `category` VALUES (9, 8, '四级菜单', 1, '四级菜单', 0, '四级菜单', '');
+INSERT INTO `category` VALUES (10, 9, '四级菜单', 1, '四级菜单', 0, '四级菜单', '');
+INSERT INTO `category` VALUES (11, 2, '二级平级', 1, '二级平级', 0, '二级平级', '');
+INSERT INTO `category` VALUES (12, 4, '三二平级', 1, '三二平级', 0, '三二平级', '');
+INSERT INTO `category` VALUES (13, 7, '4-1', 1, '', 0, '', '');
+INSERT INTO `category` VALUES (14, 8, '4-2', 1, '', 0, '', '');
+INSERT INTO `category` VALUES (15, 9, '4-3', 1, '', 0, '', '');

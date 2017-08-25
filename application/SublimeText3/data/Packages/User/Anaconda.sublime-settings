@@ -1,0 +1,8 @@
+{
+	"python_interpreter": "C:/Python36/python.exe",
+    "anaconda_linting": false,
+    "suppress_word_completions": true,
+    "suppress_explicit_completions": true,
+    "complete_parameters": true,
+
+}

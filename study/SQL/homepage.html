@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>homepage</title>
+    <style type="text/css">
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .main {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        background: url();
+    }
+    
+    .welcome {
+        font-family: "微软雅黑";
+        text-align: center;
+        font-size: 30px;
+        color: #dddddd;
+        margin: 200px;
+    }
+    
+    .information {
+        font-family: "微软雅黑";
+        text-align: right;
+        font-size: 18px;
+        color: #aaaaaa;
+        margin: 100px;
+    }
+    #time{
+        font-family: "微软雅黑";
+        text-align: right;
+        font-size: 18px;
+        color: #aaaaaa;
+    }
+    </style>
+    <script language="javascript">
+    function getCurDate() {
+        var d = new  Date();
+        var week;
+        switch (d.getDay()) {
+            case 1:
+                week = "星期一";
+                break;
+            case 2:
+                week = "星期二";
+                break;
+            case 3:
+                week = "星期三";
+                break;
+            case 4:
+                week = "星期四";
+                break;
+            case 5:
+                week = "星期五";
+                break;
+            case 6:
+                week = "星期六";
+                break;
+            default:
+                week = "星期日";
+                break;
+        }
+        var years=d.getFullYear();
+        var month=add_zero(d.getMonth()+1);
+        var days=add_zero(d.getDate());
+        var hours=add_zero(d.getHours());
+        var minutes=add_zero(d.getMinutes());
+        var seconds=add_zero(d.getSeconds());
+        var ndate=years+"年"+month+"月"+days+"日"+"&nbsp;&nbsp;"+hours+":"+minutes+":"+seconds+"&nbsp;&nbsp;"+week;
+        var timeshow =document.getElementById("time");
+        timeshow.innerHTML=ndate;
+    }
+    function add_zero (temp) {
+    	if (temp<10) {
+        return "0"+temp;
+    	} else {
+        return temp;
+    	}
+    }
+    setInterval("getCurDate()",100);
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <p class="welcome">欢迎使用综合报表系统</p>
+        <br>
+        <br>
+        <p class="information">现在时间是：<span id="time"></span></p>
+    </div>
+</body>
+
+</html>

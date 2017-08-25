@@ -1,0 +1,10 @@
+INSERT INTO `pro_unit` VALUES (1, '个', '1487733339', '超级管理员', 1);
+INSERT INTO `pro_unit` VALUES (2, '元', '1487732466', '超级管理员', 1);
+INSERT INTO `pro_unit` VALUES (3, '包', '1487733398', '超级管理员', 0);
+INSERT INTO `pro_unit` VALUES (4, '太', '1487733428', '超级管理员', 1);
+INSERT INTO `pro_unit` VALUES (5, '块', '1487733439', '超级管理员', 0);
+INSERT INTO `pro_unit` VALUES (6, '套', '1487733453', '超级管理员', 1);
+INSERT INTO `pro_unit` VALUES (7, '袋', '1487733462', '超级管理员', 1);
+INSERT INTO `pro_unit` VALUES (8, '米', '1487733466', '超级管理员', 0);
+INSERT INTO `pro_unit` VALUES (9, '箱', '1487733490', '超级管理员', 1);
+INSERT INTO `pro_unit` VALUES (10, '件', '1487733515', '超级管理员', 1);

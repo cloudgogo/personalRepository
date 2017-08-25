@@ -1,0 +1,21 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Anaconda",
+		"Color Highlighter",
+		"ConvertToUTF8",
+		"Emmet",
+		"JavaScript Completions",
+		"Markdown Preview",
+		"Package Control",
+		"Python PEP8 Autoformat",
+		"SideBarEnhancements",
+		"SublimeREPL",
+		"Sublimerge 3",
+		"Theme - Soda"
+	]
+}
