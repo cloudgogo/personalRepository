@@ -1,0 +1,1 @@
+select  * from ODM.COM_DEPARTMENT where DEPNAME='基础设施部'
