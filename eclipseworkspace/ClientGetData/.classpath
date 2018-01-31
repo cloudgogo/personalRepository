@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/WebClientLib"/>
+	<classpathentry kind="lib" path="C:/Users/temp/Desktop/2017-09-05document/lib/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/temp/Desktop/2017-09-05document/lib/axis.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

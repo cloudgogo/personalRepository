@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/FR/lib/fastjson-1.2.31.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/FR/lib/fr-core-8.0.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/FR/lib/fr-platform-8.0.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/FR/lib/json-20140107.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/FR/lib/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/FR/lib/servlet-api-3.0-alpha-1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/FR/lib/fr-chart-8.0.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/FR/lib/fr-performance-8.0.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/FR/lib/fr-report-8.0.jar"/>
+	<classpathentry kind="lib" path="D:/eclipseworkspace/FR/lib/fr-third-8.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
